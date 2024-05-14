@@ -1,220 +1,91 @@
-#mensajes{
-    margin-top: 15px;
-    width: 90%;
-    height: 350px;
-    overflow-y: scroll;
-    box-shadow: 0px 0px 5px #333 inset;
-    padding: 5px;
-    background-color: cadetblue;
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
 
-.mensaje{
-    border: 1px solid #ffa500; 
-    border-radius: 8px; 
-    padding: 10px; 
-    background-color: #ffe4b5; 
-    display: inline-block;
-    margin-top: 5px;
-    color: #333; 
-}
-
-
-.agregar-carrito-btn {
-    background-color: #ff7f00; /* Color naranja */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espacio alrededor del texto */
-    border: 2px solid #ff7f00; /* Borde naranja */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-    border-radius: 5px; /* Borde redondeado */
-}
-
-.agregar-carrito-btn:hover {
-    background-color: #ff9900; /* Cambia el color de fondo al pasar el mouse */
-    border-color: #ff9900; /* Cambia el color del borde al pasar el mouse */
-}
-
-/* Estilos para los títulos */
-.product-title {
-    font-size: 1.2em;
-    font-weight: bold;
+h2 {
     color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#cart {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart li {
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
 }
 
-/* Estilos para los precios */
-.product-price {
-    font-size: 1.1em;
-    color: #666;
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
 }
 
-/* Estilos para la descripción */
-.product-description {
-    font-size: 1em;
-    color: #444;
-    margin-bottom: 15px;
+.quantity {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e8770c;
+    color: #fff;
+    border-radius: 20px;
 }
 
-/* Estilos para los botones de agregar al carrito */
+/* Estilos específicos */
+.mensaje {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .agregar-carrito-btn {
-    background-color: #ff7f00;
+    background-color: orange;
     color: white;
     padding: 10px 20px;
-    border: 2px solid #ff7f00;
+    border: 2px solid orange;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .agregar-carrito-btn:hover {
-    background-color: #ff9900;
-    border-color: #ff9900;
-}
-
-/* Estilos para la imagen del producto */
-.product-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Estilo para la tipografía Roboto */
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Otros estilos que desees aplicar */
-h2 {
-    color: #333; /* Color del texto */
-}
-
-/* Estilos para los enlaces */
-a {
-    color: #007bff; /* Color del enlace */
-    text-decoration: none; /* Quita la subrayado predeterminado */
-}
-
-a:hover {
-    text-decoration: underline; /* Añade subrayado al pasar el mouse sobre el enlace */
-}
-
-/* Estilos para los botones */
-.agregar-carrito-btn {
-    background-color: orange; /* Color de fondo naranja */
-    color: white; /* Color del texto blanco */
-    border: 1px solid orange; /* Borde naranja */
-    padding: 5px 10px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-}
-
-.agregar-carrito-btn:hover {
-    background-color: darkorange; /* Color de fondo naranja oscuro al pasar el mouse */
-    border-color: darkorange; /* Borde naranja oscuro al pasar el mouse */
+    background-color: darkorange;
+    border-color: darkorange;
 }
 
 
-/* Estilos para el cuerpo de la página */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+#sortSelect {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
-/* Estilos para el encabezado */
-h2 {
-    color: #333;
+#sortSelect:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
 }
 
-/* Estilos para los enlaces */
-a {
-    color: #007bff; /* Azul */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para la lista del carrito */
-#cart {
-    list-style-type: none;
-    padding: 0;
-}
-
-#cart li {
-    margin-bottom: 10px;
-    border: 1px solid #ccc; /* Borde para los elementos del carrito */
-    padding: 10px;
-    background-color: #fff; /* Fondo blanco para los elementos del carrito */
-}
-
-/* Estilos para el separador horizontal */
-hr {
-    border: 1px solid #ddd;
-    margin: 20px 0;
-}
-
-/* Estilos para el contador de cantidad */
-.quantity {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #007bff; /* Fondo azul */
-    color: #fff; /* Texto blanco */
-    border-radius: 20px; /* Borde redondeado */
-}
-
-
-/* Estilos para el cuerpo de la página */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
-
-/* Estilos para el encabezado */
-h2 {
-    color: #333;
-}
-
-/* Estilos para los enlaces */
-a {
-    color: #007bff; /* Azul */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para la lista del carrito */
-#cart {
-    list-style-type: none;
-    padding: 0;
-}
-
-#cart li {
-    margin-bottom: 10px;
-    border: 1px solid #ccc; /* Borde para los elementos del carrito */
-    padding: 10px;
-    background-color: #fff; /* Fondo blanco para los elementos del carrito */
-}
-
-/* Estilos para el separador horizontal */
-hr {
-    border: 1px solid #ddd;
-    margin: 20px 0;
-}
-
-/* Estilos para el contador de cantidad */
-.quantity {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #da7618; /* Fondo azul para la cantidad */
-    color: #fff; /* Texto blanco */
-    border-radius: 20px; /* Borde redondeado */
-}
-
-/* Estilos adicionales para la cantidad en naranja */
-.orange {
-    background-color: #ff6600; /* Naranja */
-}

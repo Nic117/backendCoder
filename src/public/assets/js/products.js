@@ -4,16 +4,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const comprar = async (pid) => {
-    let inputCart = document.getElementById("cart")
-    let cid = inputCart.value
-    console.log(`Producto con id ${pid}, Carrito ${cid}`)
+    let inputCart = document.getElementById("cart");
+    let cid = inputCart.value;
+    console.log(`Producto con id ${pid}, Carrito ${cid}`);
 
     let response = await fetch(`/api/carts/${cid}/products/${pid}`, {
         method: "post"
-    })
+    });
 
     if (response.status === 200) {
-        let datos = await response.json()
+        let datos = await response.json();
+        mostrarMensajeProductoAgregado(); // Mostrar el mensaje de producto agregado
     }
 }
 
@@ -29,3 +30,14 @@ function initializeSortSelect() {
         });
     }
 }
+
+// Función para mostrar el mensaje de producto agregado
+function mostrarMensajeProductoAgregado() {
+    var mensaje = document.getElementById("productoAgregadoMensaje");
+    mensaje.style.display = "block"; // Muestra el mensaje
+    setTimeout(function() {
+        mensaje.style.display = "none"; // Oculta el mensaje después de 3 segundos
+    }, 3000);
+}
+
+
