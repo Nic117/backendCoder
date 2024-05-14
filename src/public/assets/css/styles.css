@@ -109,3 +109,112 @@ a:hover {
     background-color: darkorange; /* Color de fondo naranja oscuro al pasar el mouse */
     border-color: darkorange; /* Borde naranja oscuro al pasar el mouse */
 }
+
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Estilos para el encabezado */
+h2 {
+    color: #333;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff; /* Azul */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la lista del carrito */
+#cart {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Borde para los elementos del carrito */
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco para los elementos del carrito */
+}
+
+/* Estilos para el separador horizontal */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Estilos para el contador de cantidad */
+.quantity {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border-radius: 20px; /* Borde redondeado */
+}
+
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Estilos para el encabezado */
+h2 {
+    color: #333;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff; /* Azul */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la lista del carrito */
+#cart {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Borde para los elementos del carrito */
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco para los elementos del carrito */
+}
+
+/* Estilos para el separador horizontal */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Estilos para el contador de cantidad */
+.quantity {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #da7618; /* Fondo azul para la cantidad */
+    color: #fff; /* Texto blanco */
+    border-radius: 20px; /* Borde redondeado */
+}
+
+/* Estilos adicionales para la cantidad en naranja */
+.orange {
+    background-color: #ff6600; /* Naranja */
+}
