@@ -17,3 +17,95 @@
     margin-top: 5px;
     color: #333; 
 }
+
+
+.agregar-carrito-btn {
+    background-color: #ff7f00; /* Color naranja */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: 2px solid #ff7f00; /* Borde naranja */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.agregar-carrito-btn:hover {
+    background-color: #ff9900; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #ff9900; /* Cambia el color del borde al pasar el mouse */
+}
+
+/* Estilos para los títulos */
+.product-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los precios */
+.product-price {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Estilos para la descripción */
+.product-description {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los botones de agregar al carrito */
+.agregar-carrito-btn {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #ff7f00;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.agregar-carrito-btn:hover {
+    background-color: #ff9900;
+    border-color: #ff9900;
+}
+
+/* Estilos para la imagen del producto */
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la tipografía Roboto */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Otros estilos que desees aplicar */
+h2 {
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Quita la subrayado predeterminado */
+}
+
+a:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el mouse sobre el enlace */
+}
+
+/* Estilos para los botones */
+.agregar-carrito-btn {
+    background-color: orange; /* Color de fondo naranja */
+    color: white; /* Color del texto blanco */
+    border: 1px solid orange; /* Borde naranja */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.agregar-carrito-btn:hover {
+    background-color: darkorange; /* Color de fondo naranja oscuro al pasar el mouse */
+    border-color: darkorange; /* Borde naranja oscuro al pasar el mouse */
+}
